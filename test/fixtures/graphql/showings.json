@@ -1,0 +1,473 @@
+{
+  "2026-11-01": {
+    "data": [
+      {
+        "id": "488172",
+        "time": "2026-11-01T12:00:00Z",
+        "published": true,
+        "private": false,
+        "seatsRemaining": 1,
+        "showingBadges": [
+          {
+            "displayName": "Accessible"
+          },
+          {
+            "displayName": "35mm Screening"
+          },
+          {
+            "displayName": "Halloween"
+          }
+        ],
+        "movie": {
+          "id": "7583",
+          "name": "All Day Horror Madness",
+          "urlSlug": "all-day-horror-madness",
+          "releaseDate": "2023-10-29",
+          "titleClass": {
+            "name": "Film - FLS"
+          }
+        }
+      },
+      {
+        "id": "488175",
+        "time": "2026-11-01T15:00:00Z",
+        "published": true,
+        "private": false,
+        "seatsRemaining": 0,
+        "showingBadges": [
+          {
+            "displayName": "Accessible"
+          },
+          {
+            "displayName": "Subtitled"
+          },
+          {
+            "displayName": "Audio Described"
+          }
+        ],
+        "movie": {
+          "id": "40583",
+          "name": "Fatherland",
+          "urlSlug": "fatherland",
+          "releaseDate": "2026-06-19",
+          "titleClass": {
+            "name": "Film"
+          }
+        }
+      },
+      {
+        "id": "488178",
+        "time": "2026-11-01T12:25:00Z",
+        "published": true,
+        "private": false,
+        "seatsRemaining": 34,
+        "showingBadges": [
+          {
+            "displayName": "Accessible"
+          },
+          {
+            "displayName": "Subtitled"
+          }
+        ],
+        "movie": {
+          "id": "40630",
+          "name": "Gentle Monster",
+          "urlSlug": "gentle-monster",
+          "releaseDate": "2026-09-17",
+          "titleClass": {
+            "name": "Film"
+          }
+        }
+      }
+    ]
+  },
+  "2026-11-06": {
+    "data": [
+      {
+        "id": "500434",
+        "time": "2026-11-06T12:00:00Z",
+        "published": true,
+        "private": false,
+        "seatsRemaining": 3,
+        "showingBadges": [
+          {
+            "displayName": "Accessible"
+          },
+          {
+            "displayName": "SLA 2026"
+          }
+        ],
+        "movie": {
+          "id": "8159",
+          "name": "Scotland Loves Anime 2026 Weekend Pass",
+          "urlSlug": "sla-weekend-pass",
+          "releaseDate": "2025-10-31",
+          "titleClass": {
+            "name": "Film"
+          }
+        }
+      },
+      {
+        "id": "495960",
+        "time": "2026-11-06T12:40:00Z",
+        "published": true,
+        "private": false,
+        "seatsRemaining": 202,
+        "showingBadges": [
+          {
+            "displayName": "UK Premiere"
+          },
+          {
+            "displayName": "Accessible"
+          },
+          {
+            "displayName": "SLA 2026"
+          },
+          {
+            "displayName": "Subtitled"
+          }
+        ],
+        "movie": {
+          "id": "41895",
+          "name": "The Obsessed",
+          "urlSlug": "the-obsessed",
+          "releaseDate": "2025-11-07",
+          "titleClass": {
+            "name": "Film"
+          }
+        }
+      }
+    ]
+  },
+  "2026-11-07": {
+    "data": [
+      {
+        "id": "510111",
+        "time": "2026-11-07T11:30:00Z",
+        "published": true,
+        "private": false,
+        "seatsRemaining": 380,
+        "showingBadges": [
+          {
+            "displayName": "Accessible"
+          },
+          {
+            "displayName": "Free"
+          },
+          {
+            "displayName": "Take 2"
+          }
+        ],
+        "movie": {
+          "id": "42948",
+          "name": "Take 2: Flight of the Navigator",
+          "urlSlug": "take-2-flight-of-the-navigator",
+          "releaseDate": "1986-07-30",
+          "titleClass": {
+            "name": "Film"
+          }
+        }
+      }
+    ]
+  },
+  "2026-11-14": {
+    "data": [
+      {
+        "id": "508709",
+        "time": "2026-11-14T11:30:00Z",
+        "published": true,
+        "private": false,
+        "seatsRemaining": 381,
+        "showingBadges": [
+          {
+            "displayName": "Captioned"
+          },
+          {
+            "displayName": "Accessible"
+          },
+          {
+            "displayName": "Autism Friendly"
+          },
+          {
+            "displayName": "Free"
+          },
+          {
+            "displayName": "Take 2"
+          }
+        ],
+        "movie": {
+          "id": "14478",
+          "name": "Take 2 Access: The LEGO Movie",
+          "urlSlug": "the-lego-movie",
+          "releaseDate": "2014-02-06",
+          "titleClass": {
+            "name": "Film - Don't Use"
+          }
+        }
+      },
+      {
+        "id": "510186",
+        "time": "2026-11-14T14:30:00Z",
+        "published": true,
+        "private": false,
+        "seatsRemaining": 49,
+        "showingBadges": [
+          {
+            "displayName": "Accessible"
+          }
+        ],
+        "movie": {
+          "id": "6844",
+          "name": "Marie Antoinette - 20th Anniversary - 4K",
+          "urlSlug": "marie-antoinette",
+          "releaseDate": "2006-05-24",
+          "titleClass": {
+            "name": "Film"
+          }
+        }
+      }
+    ]
+  },
+  "2026-11-15": {
+    "data": [
+      {
+        "id": "485451",
+        "time": "2026-11-15T19:20:00Z",
+        "published": true,
+        "private": false,
+        "seatsRemaining": 79,
+        "showingBadges": [
+          {
+            "displayName": "Accessible"
+          },
+          {
+            "displayName": "Q&A"
+          }
+        ],
+        "movie": {
+          "id": "40451",
+          "name": "It's Nice Up North - 20th Anniversary + Q&A",
+          "urlSlug": "its-nice-up-north---20th-anniversary-qa",
+          "releaseDate": "2006-09-01",
+          "titleClass": {
+            "name": "Film"
+          }
+        }
+      }
+    ]
+  },
+  "2026-11-16": {
+    "data": [
+      {
+        "id": "510135",
+        "time": "2026-11-16T20:00:00Z",
+        "published": true,
+        "private": false,
+        "seatsRemaining": 108,
+        "showingBadges": [
+          {
+            "displayName": "Accessible"
+          },
+          {
+            "displayName": "Introduction"
+          },
+          {
+            "displayName": "Subtitled"
+          }
+        ],
+        "movie": {
+          "id": "42528",
+          "name": "Malina + introduction",
+          "urlSlug": "malina-introduction",
+          "releaseDate": null,
+          "titleClass": {
+            "name": "Film"
+          }
+        }
+      }
+    ]
+  },
+  "2026-11-19": {
+    "data": [
+      {
+        "id": "480643",
+        "time": "2026-11-19T11:00:00Z",
+        "published": true,
+        "private": false,
+        "seatsRemaining": 0,
+        "showingBadges": [
+          {
+            "displayName": "Bargain"
+          },
+          {
+            "displayName": "Accessible"
+          },
+          {
+            "displayName": "Dementia Friendly"
+          }
+        ],
+        "movie": {
+          "id": "40518",
+          "name": "Movie Memories: An Affair to Remember",
+          "urlSlug": "movie-memories-an-affair-to-remember",
+          "releaseDate": "1957-07-11",
+          "titleClass": {
+            "name": "Film"
+          }
+        }
+      },
+      {
+        "id": "464133",
+        "time": "2026-11-19T19:30:00Z",
+        "published": true,
+        "private": false,
+        "seatsRemaining": 337,
+        "showingBadges": [
+          {
+            "displayName": "Special Events"
+          },
+          {
+            "displayName": "Reserved"
+          },
+          {
+            "displayName": "Accessible"
+          },
+          {
+            "displayName": "As Live"
+          },
+          {
+            "displayName": "Event Cinema "
+          }
+        ],
+        "movie": {
+          "id": "39369",
+          "name": "GIANT - The Play",
+          "urlSlug": "giant---the-play",
+          "releaseDate": null,
+          "titleClass": {
+            "name": "Event Cinema"
+          }
+        }
+      }
+    ]
+  },
+  "2026-11-21": {
+    "data": [
+      {
+        "id": "500092",
+        "time": "2026-11-21T17:00:00Z",
+        "published": true,
+        "private": false,
+        "seatsRemaining": 105,
+        "showingBadges": [
+          {
+            "displayName": "Accessible"
+          },
+          {
+            "displayName": "Q&A"
+          },
+          {
+            "displayName": "Subtitled"
+          }
+        ],
+        "movie": {
+          "id": "42137",
+          "name": "FFF: The Money Maker + Q&A",
+          "urlSlug": "fff-the-money-maker-qa",
+          "releaseDate": "2026-01-12",
+          "titleClass": {
+            "name": "Film"
+          }
+        }
+      },
+      {
+        "id": "500088",
+        "time": "2026-11-21T14:00:00Z",
+        "published": true,
+        "private": false,
+        "seatsRemaining": 360,
+        "showingBadges": [
+          {
+            "displayName": "Accessible"
+          },
+          {
+            "displayName": "35mm Screening"
+          }
+        ],
+        "movie": {
+          "id": "42135",
+          "name": "Short Cuts - 35mm",
+          "urlSlug": "short-cuts---35mm",
+          "releaseDate": "1993-10-01",
+          "titleClass": {
+            "name": "Film"
+          }
+        }
+      },
+      {
+        "id": "508707",
+        "time": "2026-11-21T11:30:00Z",
+        "published": true,
+        "private": false,
+        "seatsRemaining": 381,
+        "showingBadges": [
+          {
+            "displayName": "Accessible"
+          },
+          {
+            "displayName": "Take 2 - don't use"
+          },
+          {
+            "displayName": "Subtitled"
+          },
+          {
+            "displayName": "Take 2"
+          }
+        ],
+        "movie": {
+          "id": "42434",
+          "name": "Take 2: Nina and the Hedgehog's Secret",
+          "urlSlug": "take-2-nina-and-the-hedgehogs-secret",
+          "releaseDate": "2023-10-11",
+          "titleClass": {
+            "name": "Film"
+          }
+        }
+      }
+    ]
+  },
+  "2027-02-18": {
+    "data": [
+      {
+        "id": "499119",
+        "time": "2027-02-18T19:00:00Z",
+        "published": true,
+        "private": false,
+        "seatsRemaining": 378,
+        "showingBadges": [
+          {
+            "displayName": "Reserved"
+          },
+          {
+            "displayName": "Accessible"
+          },
+          {
+            "displayName": "As Live"
+          },
+          {
+            "displayName": "Event Cinema "
+          }
+        ],
+        "movie": {
+          "id": "42244",
+          "name": "NT Live: The Motive and the Cue",
+          "urlSlug": "nt-live-the-motive-and-the-cue",
+          "releaseDate": null,
+          "titleClass": {
+            "name": "Event Cinema"
+          }
+        }
+      }
+    ]
+  }
+}
