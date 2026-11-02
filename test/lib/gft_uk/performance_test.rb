@@ -33,7 +33,7 @@ class GftUk::PerformanceTest < Minitest::Test
   end
 
   def test_at_defaults_to_two_weeks_from_today
-    performances = GftUk::Performance.stub(:today, FIXTURE_DAY) { GftUk::Performance.at('103') }
+    performances = Cinebase::London.stub(:today, FIXTURE_DAY) { GftUk::Performance.at('103') }
 
     assert_equal 7, performances.count
     assert_operator performances.last.showing_on, :<=, FIXTURE_DAY + 13
@@ -59,9 +59,5 @@ class GftUk::PerformanceTest < Minitest::Test
 
   def test_at_rejects_a_reversed_range
     assert_raises(ArgumentError) { GftUk::Performance.at('103', from: FIXTURE_DAY, to: FIXTURE_DAY - 1) }
-  end
-
-  def test_today_is_the_london_date
-    assert_kind_of Date, GftUk::Performance.send(:today)
   end
 end

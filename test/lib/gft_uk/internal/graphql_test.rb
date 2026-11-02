@@ -31,17 +31,25 @@ class GftUk::Internal::GraphqlTest < Minitest::Test
     stub_request(:post, GRAPHQL).to_return(status: 500, body: 'secret')
 
     error = assert_raises(RuntimeError) { graphql.query(QUERY) }
-    assert_equal 'Indy HTTP error 500', error.message
+    assert_equal 'HTTP error 500 from www.glasgowfilm.org', error.message
   end
 
   def test_requests_share_a_connection
     stub_request(:post, GRAPHQL).to_return(status: 200, body: '{"data":{}}')
     client = graphql
+    start = Net::HTTP.method(:start)
+    connections = 0
+    counting = lambda do |*args, **options|
+      connections += 1
+      start.call(*args, **options)
+    end
 
-    client.query(QUERY)
-    client.query(QUERY)
+    Net::HTTP.stub(:start, counting) do
+      client.query(QUERY)
+      client.query(QUERY)
+    end
 
-    assert_same client.send(:connection), client.send(:connection)
+    assert_equal 1, connections
     assert_requested :post, GRAPHQL, times: 2
   end
 
@@ -49,17 +57,9 @@ class GftUk::Internal::GraphqlTest < Minitest::Test
     stub_request(:post, GRAPHQL).to_raise(Errno::ECONNRESET).then.to_return(status: 200, body: '{"data":{}}')
     client = graphql
 
-    client.stub(:sleep, nil) { client.query(QUERY) }
+    Cinebase::Http.stub(:pause, nil) { client.query(QUERY) }
 
     assert_requested :post, GRAPHQL, times: 2
-  end
-
-  def test_transient_errors_are_raised_after_retries
-    stub_request(:post, GRAPHQL).to_raise(Net::OpenTimeout)
-    client = graphql
-
-    assert_raises(Net::OpenTimeout) { client.stub(:sleep, nil) { client.query(QUERY) } }
-    assert_requested :post, GRAPHQL, times: 3
   end
 
   private

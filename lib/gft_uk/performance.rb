@@ -23,8 +23,6 @@ module GftUk
     #   @option options [Integer] :film_year (nil) year of the film
     #   @option options [Time] :starting_at listed start time of the performance
 
-    TIME_ZONE = 'Europe/London'.freeze
-
     # Performances within an inclusive range of showing dates: one request
     # for the dates with showings, then one for every ten of those dates.
     # @param [Integer, String] cinema_id the cinema's Indy site id, '103'
@@ -33,7 +31,7 @@ module GftUk
     # @return [Array<GftUk::Performance>]
     def self.at(
       cinema_id,
-      from: today,
+      from: Cinebase::London.today,
       to: from + 13
     )
       raise ArgumentError, 'to must not precede from' if to < from
@@ -60,11 +58,6 @@ module GftUk
     # @!method variant
     #   The kinds of screening (arts, audio_described, kids, relaxed, subtitled ...)
     #   @return <Array[String]>
-
-    def self.today
-      TZInfo::Timezone.get(TIME_ZONE).now.to_date
-    end
-    private_class_method :today
 
     def self.showings(cinema, dates)
       indy = GftUk::Internal::Indy.new(cinema.url, site_id: cinema.id)

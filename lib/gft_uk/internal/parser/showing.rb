@@ -65,7 +65,6 @@ module GftUk
         NON_FILM_TITLES = /\b(?:Pass|Gift Card|Voucher|Membership)\z/i
 
         THREE_D = /\b3D\b/i
-        TIME_ZONE = 'Europe/London'
 
         # @param [Hash] showing one showing, with its movie
         # @param [String] url the website's home page
@@ -127,7 +126,7 @@ module GftUk
         end
 
         def london_year
-          TZInfo::Timezone.get(TIME_ZONE).to_local(starting_at).year
+          Cinebase::London.date(starting_at).year
         end
 
         def movie
