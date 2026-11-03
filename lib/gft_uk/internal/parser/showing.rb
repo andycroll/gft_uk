@@ -89,6 +89,7 @@ module GftUk
             film_name: TitleSanitizer.new(title).sanitized,
             film_year: Cinebase::TitleSanitizer.film_year(title) || release_year,
             starting_at: starting_at,
+            title: title,
             variant: variant
           }
         end
@@ -107,7 +108,7 @@ module GftUk
         end
 
         def festival
-          Cinebase::Festival.from_title(title, year: london_year) || badge_festival || title_festival
+          title_festival || Cinebase::Festival.from_title(title, year: london_year) || badge_festival
         end
 
         def badge_festival
