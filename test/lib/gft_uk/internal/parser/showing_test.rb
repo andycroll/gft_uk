@@ -13,6 +13,7 @@ class GftUk::Internal::Parser::ShowingTest < Minitest::Test
       film_name: 'All Day Horror Madness',
       film_year: 2023,
       starting_at: Time.utc(2026, 11, 1, 12, 0),
+      title: 'All Day Horror Madness',
       variant: %w(35mm)
     }
 
@@ -93,6 +94,16 @@ class GftUk::Internal::Parser::ShowingTest < Minitest::Test
     assert_equal festival, parse(fixture('FFF: The Money Maker + Q&A')).to_hash[:festival]
   end
 
+  def test_performances_read_variants_and_events_from_the_raw_title
+    relaxed = performance('Relaxed Screening: Gentle Monster')
+    opera = performance('NT Live: Hay Fever')
+
+    assert_equal 'Gentle Monster', relaxed.film_name
+    assert_includes relaxed.variant, 'relaxed'
+    assert_equal 'Hay Fever', opera.film_name
+    assert_equal Cinebase::Event.new(name: 'National Theatre Live'), opera.event
+  end
+
   def test_cinebase_festival_prefixes
     showing = fixture('Gentle Monster')
     showing['movie']['name'] = 'Horror Season 2026 Gentle Monster'
@@ -126,6 +137,12 @@ class GftUk::Internal::Parser::ShowingTest < Minitest::Test
 
   def parse(showing)
     GftUk::Internal::Parser::Showing.new(showing, url: URL)
+  end
+
+  def performance(title)
+    showing = fixture('Gentle Monster')
+    showing['movie']['name'] = title
+    GftUk::Performance.new(parse(showing).to_hash.merge(cinema_id: '103', cinema_name: 'GFT'))
   end
 
   def variant(name)

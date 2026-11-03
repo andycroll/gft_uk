@@ -136,7 +136,8 @@ Titles are cleaned up:
 - Anniversaries, restorations and prints go: 'Marie Antoinette - 20th
   Anniversary - 4K', 'Short Cuts - 35mm', 'A Silent Voice (10th Anniversary)'.
 - Add-ons go: '+ Q&A', '+ discussion', '+ introduction'.
-- 'NT Live:' becomes 'National Theatre Live:'.
+- Series prefixes such as 'NT Live:' go, and the performance's `event` names
+  the series, here National Theatre Live.
 
 ## Tests
 

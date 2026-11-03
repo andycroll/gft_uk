@@ -22,6 +22,7 @@ module GftUk
     #   @option options [String] :film_name name of the film
     #   @option options [Integer] :film_year (nil) year of the film
     #   @option options [Time] :starting_at listed start time of the performance
+    #   @option options [String] :title (nil) raw title, for audience variants
 
     # Performances within an inclusive range of showing dates: one request
     # for the dates with showings, then one for every ten of those dates.
